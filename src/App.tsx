@@ -2,8 +2,8 @@ import '../gesture-handler';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Login from './Pages/Login';
-import SignIn from './Pages/SignIn';
+import Login from './Pages/Auth/Login';
+import SignIn from './Pages/Auth/SignIn';
 
 
 const Drawer = createDrawerNavigator();
