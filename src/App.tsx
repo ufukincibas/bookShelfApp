@@ -5,6 +5,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Login from './Pages/Auth/Login';
 import SignIn from './Pages/Auth/SignIn';
 
+import FlashMessage  from 'react-native-flash-message';
 
 const Drawer = createDrawerNavigator();
 
@@ -15,6 +16,7 @@ function App(){
         <Drawer.Screen name='LoginPage' component={Login}/>
         <Drawer.Screen name='SignInPage' component={SignIn}/>
       </Drawer.Navigator>
+      <FlashMessage position="top" />
     </NavigationContainer>
   )
 }
